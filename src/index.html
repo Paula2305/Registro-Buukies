@@ -8,38 +8,50 @@
     <title>Login</title>
 </head>
 
-<body>
+<body class="min-h-screen">
+    
+        
+        <div class="max-w-3xl mx-auto p-10">
+            <form action="" id="formulario" class=" grid place-content-center mt-20  ">
+                <div class="flex gap-5 space-x-3">
+                    <button type="submit" class="flex-1 flex justify-center gap-2 items-center border border-black "> Iniciar sesión </button>
+                    <button type="submit" class="flex-1 flex justify-center gap-2 items-center border border-white bg-orange-500 text-white"> Registrarse </button>
+                </div>
 
-    <form action="" id="formulario">
-        <div class="botones">
-            <button type="submit"> Iniciar sesión </button>
-            <button type="submit"> Registrarse </button>
+                <div class="flex flex-col my-3">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="border border-black">
+                </div>
+
+                <div class="flex flex-col my-3">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="border border-black">
+                </div>
+
+                <div class="flex flex-col my-3 ">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" class="border border-black">
+                </div>
+
+                <div class="flex flex-col my-3">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="contraseña" id="contraseña" placeholder="contraseña" class="border border-black">
+                </div>
+
+                <div class="flex flex-col my-3">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="validar-contraseña" id="validar-contraseña" placeholder="validar contraseña" class="border border-black">
+                </div>
+
+                <p> Acepto los términos y condiciones de Buukies</p>
+
+                <button type="submit" class="border border-black my-3"> Registrarse  <i class="fa-solid fa-arrow-right"></i> </button>
+            </form>
         </div>
-
-        <div class="">
-            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
-        </div>
-        <div>
-            <input type="text" name="contraseña" id="contraseña" placeholder="contraseña">
-        </div>
-        <div>
-            <input type="text" name="validar-contraseña" id="validar-contraseña" placeholder="validar contraseña">
-        </div>
-        <div>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-        </div>
-        <div>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-        </div>
+ 
 
 
-        <p> Acepto los términos y condiciones de Buukies</p>
-
-        <button type="submit"> Registrarse </button>
-
-    </form>
-
-
+        <script src="https://kit.fontawesome.com/a8568055c8.js" crossorigin="anonymous"></script>
 
 </body>
 
