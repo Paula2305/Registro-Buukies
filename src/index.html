@@ -8,39 +8,42 @@
     <title>Login</title>
 </head>
 
-<body>
+<body class="min-h-screen">
 
-    <form action="" id="formulario">
-        <div class="botones">
-            <button type="submit"> Iniciar sesión </button>
-            <button type="submit"> Registrarse </button>
+    <div class="max-w-3xl mx-auto p-20 ">
+        <div class="flex justify-center p-10 mt-5">
+            <form action="" id="formulario" class=" space-y-3">
+                <div id="botones" class="flex gap-5">
+                    <button type="submit" class="flex-1 bg-orange-600 border border-white text-white "> Iniciar sesión </button>
+                    <button type="submit" class="flex-1 border border-black"> Registrarse </button>
+                </div>
+                <div class="flex flex-col border border-black">
+                    <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
+                </div>
+                <div class="flex flex-col space-y-2 border border-black ">
+                    <input type="text" name="contraseña" id="contraseña" placeholder="contraseña">
+                </div>
+                <div class="flex flex-col space-y-2 border border-black">
+                    <input type="text" name="validar-contraseña" id="validar-contraseña"
+                        placeholder="validar contraseña">
+                </div>
+                <div class="flex flex-col space-y-2 border border-black">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="flex flex-col space-y-2 border border-black">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+                <p> Acepto los términos y condiciones de Buukies</p>
+
+                <div class="flex flex-col">
+                    <button type="submit" class="border border-black rounded-full"> Registrarse </button>
+                </div>
+
+            </form>
         </div>
+    </div>
 
-        <div class="">
-            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
-        </div>
-        <div>
-            <input type="text" name="contraseña" id="contraseña" placeholder="contraseña">
-        </div>
-        <div>
-            <input type="text" name="validar-contraseña" id="validar-contraseña" placeholder="validar contraseña">
-        </div>
-        <div>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-        </div>
-        <div>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-        </div>
-
-
-        <p> Acepto los términos y condiciones de Buukies</p>
-
-        <button type="submit"> Registrarse </button>
-
-    </form>
-
-
-
+    <script src="https://kit.fontawesome.com/a8568055c8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
