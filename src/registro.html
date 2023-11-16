@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Signup</title>
+</head>
+
+<body class="min-h-screen bg-slate-100">
+
+    <div class="max-w-3xl mx-auto p-20 ">
+        <div class="bg-white flex justify-center rounded-lg shadow-xl p-10 mt-5">
+            <form action="" id="formulario" class="space-y-3 p-20 mt-5 w-full max-h-full">
+
+                <div id="redireccion" class="flex gap-5">
+                    <a href="/src/index.html" class="flex-1 flex justify-center border border-black text-black rounded-lg "> Iniciar Sesion </a>
+                    <a href="/src/registro.html" class="flex-1 flex justify-center bg-orange-600 border border-white text-white rounded-lg"> Registrarse </a>
+                </div>
+
+                <div class="flex items-center gap-2 border border-black">
+                        <i class="fa-solid fa-envelope p-1"></i>
+                        <input class="w-full " type="email" name="email" id="email" placeholder="Ejemplo@gmail.com">
+                </div>
+
+                <div class="flex items-center gap-2 border border-black ">
+                    <i class="fa-solid fa-lock p-1"></i>
+                    <input class="w-full" type="text" name="contraseña" id="contraseña" placeholder="Contraseña">
+                </div>
+
+                <div class="flex items-center gap-2 border border-black">
+                    <i class="fa-solid fa-lock p-1"></i>
+                    <input class="w-full" type="text" name="validar-contraseña" id="validar-contraseña"
+                        placeholder="Validar contraseña">
+                </div>
+
+                <div class="flex items-center gap-2 border border-black">
+                    <i class="fa-solid fa-user p-1"></i>
+                    <input class="w-full" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+
+                <div class="flex items-center gap-2 border border-black ">
+                    <i class="fa-solid fa-user p-1"></i>
+                    <input class="w-full" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex items-center h-5 p-2">
+                      <input id="terminos" aria-describedby="terminos" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
+                    </div>
+                    <div class="ml-3 text-sm">
+                      <label for="terminos" class="text-gray-500 dark:text-gray-300"> Acepto los términos y condiciones de Buukies </label>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <button type="submit" class="border border-white rounded-full bg-orange-600 text-white w-1/2"> 
+                        Registrarse 
+
+                        <i class="fa-solid fa-arrow-right text-white ml-2"></i> 
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a8568055c8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
