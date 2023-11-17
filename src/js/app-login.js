@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", function(){
     const formulario = document.querySelector("#formulario");
     const btnSubmit = document.querySelector('#formulario button[type="submit"]')
 
-    inputEmail.addEventListener('blur', validar);
-    inputContraseña.addEventListener('blur', validar);// input se activa cuando se cambia la propiedad value de un elemento
+    inputEmail.addEventListener('input', validar);
+    inputContraseña.addEventListener('input', validar);// input se activa cuando se cambia la propiedad value de un elemento
 
     function validar(e){
         if(e.target.value.trim() === ''){
-            mostrarAlerta(`El campo ${e.target.id} es obligatorio`, e.target.parentElement.parentElement);
+            mostrarAlerta(`El campo es obligatorio`, e.target.parentElement.parentElement);
             form[e.target.name] = '';
             comprobarForm();
             return;
@@ -70,6 +70,5 @@ document.addEventListener("DOMContentLoaded", function(){
             btnSubmit.disabled = false;
         }
     }
-
 
 })

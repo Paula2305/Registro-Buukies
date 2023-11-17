@@ -19,30 +19,32 @@
                     <a href="/src/registro.html" class="flex-1 flex justify-center bg-orange-600 border border-orange text-white rounded-lg"> Registrarse </a>
                 </div>
 
-                <div class="flex items-center gap-2 border border-black">
-                        <i class="fa-solid fa-envelope p-1"></i>
-                        <input class="w-full " type="email" name="email" id="email" placeholder="Ejemplo@gmail.com">
+                <div class="flex flex-col space-y-2">
+                    <div class="flex items-center gap-2 border border-black">
+                            <i class="fa-solid fa-envelope p-1"></i>
+                            <input class="w-full " type="email" name="email" id="email" placeholder="Ejemplo@gmail.com">
+                    </div>
                 </div>
 
-                <div class="flex items-center gap-2 border border-black ">
-                    <i class="fa-solid fa-lock p-1"></i>
-                    <input class="w-full" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                <div class="flex flex-col space-y-2">
+                    <div class="flex items-center gap-2 border border-black ">
+                        <i class="fa-solid fa-lock p-1"></i>
+                        <input class="w-full" type="password" name="password" id="password" placeholder="Contraseña">
+                    </div>
                 </div>
 
-                <div class="flex items-center gap-2 border border-black">
-                    <i class="fa-solid fa-lock p-1"></i>
-                    <input class="w-full" type="password" name="validar-contraseña" id="validar-contraseña"
-                        placeholder="Validar contraseña">
+                <div class="flex flex-col space-y-2">
+                    <div class="flex items-center gap-2 border border-black">
+                        <i class="fa-solid fa-user p-1"></i>
+                        <input class="w-full" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    </div>
                 </div>
 
-                <div class="flex items-center gap-2 border border-black">
-                    <i class="fa-solid fa-user p-1"></i>
-                    <input class="w-full" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                </div>
-
-                <div class="flex items-center gap-2 border border-black ">
-                    <i class="fa-solid fa-user p-1"></i>
-                    <input class="w-full" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <div class="flex flex-col space-y-2">
+                    <div class="flex items-center gap-2 border border-black ">
+                        <i class="fa-solid fa-user p-1"></i>
+                        <input class="w-full" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    </div>
                 </div>
 
                 <div class="flex items-start">
@@ -55,7 +57,7 @@
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <button type="submit" class="border border-white rounded-full bg-orange-600 text-white w-1/2"> 
+                    <button type="submit" class="border border-white rounded-full bg-orange-600 text-white w-1/2" disabled> 
                         Registrarse 
 
                         <i class="fa-solid fa-arrow-right text-white ml-2"></i> 
@@ -67,7 +69,7 @@
     </div>
 
     <script src="https://kit.fontawesome.com/a8568055c8.js" crossorigin="anonymous"></script>
-    <script src="/src/js/main.js"></script>
+    <script src="/src/js/app-signup.js"></script>
 </body>
 
 </html>
