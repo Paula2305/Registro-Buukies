@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
     <title>Signup</title>
 </head>
 
@@ -15,8 +15,8 @@
             <form action="" id="formulario" class="space-y-3 p-20 mt-5 w-full max-h-full">
 
                 <div id="redireccion" class="flex gap-5">
-                    <a href="/src/index.html" class="flex-1 flex justify-center border border-black text-black rounded-lg "> Iniciar Sesion </a>
-                    <a href="/src/registro.html" class="flex-1 flex justify-center bg-orange-600 border border-orange text-white rounded-lg"> Registrarse </a>
+                    <a href="../src/index.html" class="flex-1 flex justify-center border border-black text-black rounded-lg "> Iniciar Sesion </a>
+                    <a href="../src/registro.html" class="flex-1 flex justify-center bg-orange-600 border border-orange text-white rounded-lg"> Registrarse </a>
                 </div>
 
                 <div class="flex flex-col space-y-2">
@@ -57,10 +57,10 @@
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <button type="submit" class="border border-white rounded-full bg-orange-600 text-white w-1/2" disabled> 
-                        Registrarse 
+                    <button type="button" class="border border-white rounded-full bg-orange-600 text-white w-1/2" disabled>
+                        Registrarse
 
-                        <i class="fa-solid fa-arrow-right text-white ml-2"></i> 
+                        <i class="fa-solid fa-arrow-right text-white ml-2"></i>
                     </button>
                 </div>
 
@@ -69,7 +69,8 @@
     </div>
 
     <script src="https://kit.fontawesome.com/a8568055c8.js" crossorigin="anonymous"></script>
-    <script src="/src/js/app-signup.js"></script>
+    <script type="module" src="../src/js/app-signup.js"></script>
+<!--    <script type="module" src="../src/js/conexion.js"></script>-->
 </body>
 
 </html>

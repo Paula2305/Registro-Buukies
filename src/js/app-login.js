@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
         limpiarAlerta(e.target.parentElement.parentElement);
 
         form[e.target.name] = e.target.value.trim().toLowerCase();
-        
+
         comprobarForm();
     }
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         // console.log('Hubo un error')
         const error = document.createElement('P');
-        
+
         error.textContent = mensaje;
         error.classList.add("bg-red-600", "text-white", "p-2", "text-center");
 
